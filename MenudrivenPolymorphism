@@ -1,0 +1,79 @@
+import java.util.*;
+public class Poly_2_sw {
+	
+ 
+	void area(double f)
+	{ 
+		
+		double h=3.14*f*f;
+		System.out.println("the area of circle is " +h);
+	}
+	void area(double c,int d)
+	{
+		double h=2*(c*d);
+		System.out.println("the area of rectangle is " +h);
+		
+	}
+	void area(int a,int b)
+	{
+		double h=0.5*a*b;
+		System.out.println("the area of triangle is " +h);
+	}
+	void area(int t)
+	{ 
+		int h=t*t;
+		System.out.println("the area of square is " +h);
+	}
+	public static void main(String[] args) {
+		Poly_2_sw k=new Poly_2_sw();
+		Scanner i=new Scanner (System.in);
+		
+		
+		
+		System.out.println("1.circle");
+		System.out.println("2.rectangle");
+		System.out.println("3.triangle");
+		System.out.println("4.square");
+		System.out.println("enter option");
+		int choice=i.nextInt();
+		
+		
+		
+		
+		
+		switch (choice)
+		{
+		case 1:   System.out.println("enter radius ");
+		          Double f=i.nextDouble();
+		          k.area(f);
+		          break;
+		case 2:
+		         System.out.println("enter length");
+		         int j=i.nextInt();
+		          System.out.println("enter breadth");
+		         int g=i.nextInt();
+		          k.area(j,g);
+	              break;
+		case 3:
+		          System.out.println("enter first side");
+		          int m=i.nextInt();
+	              System.out.println("enter second side");
+		          int n=i.nextInt();
+		          k.area(m,n);
+		          break;
+		case 4:
+		          System.out.println("enter the side");
+	              int p=i.nextInt();
+	              k.area(p);
+	              break;
+		}
+		}
+		   
+		   
+		   
+   
+		
+		
+	
+
+}
